@@ -1,0 +1,617 @@
+/* header */
+@font-face{
+    font-family: "Mulish-Bold";
+    src: url(../fonts/Mulish-Bold.ttf); 
+}
+@font-face{
+    font-family:"Mulish-Light" ;
+    src: url(../fonts/Mulish-Light.ttf);
+}
+@font-face{
+    font-family:"Mulish-Medium" ;
+    src: url(../fonts/Mulish-Medium.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body{
+    overflow-x: hidden;
+    /* padding-top: 100px; */
+}
+.scroll-shadow {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.11);
+  }
+img{
+    max-width: 100%;
+    image-rendering: optimizeQuality;
+}
+.menu-style{
+    margin-left:50px;
+}
+
+.active{
+    color:#1F1534;
+    font: 18px "Mulish-Bold";
+}
+.navbar-collapse {
+    background-color: #fff; /* replace #fff with your desired background color */
+
+  }
+.menu-link{
+    color: #1F1534;
+    opacity: 0.8;
+    font: 16px/20px "Mulish-Medium";
+    margin-left:20px;
+}
+
+.header a:hover{
+    color:#1F1534;
+    text-decoration: none;
+    opacity:1;
+}
+
+.header{
+    background: white;
+    position: fixed;
+    /* display: flex; */
+    z-index: 100;
+    width: 100%;
+    height: 80px;
+}
+.header#scroll{
+    width: 100%;
+}
+
+
+/* Consultation */
+.consultation{
+    min-height: 550px;
+    position:relative;
+    margin-bottom: 70px;
+    top: 100px;
+}
+.circle-img{
+    position: absolute;
+    left:-110px;
+    top:-90px;
+}
+.virtual-text{
+    padding-top:70px;
+    font: 48px/56px "Mulish-Bold";
+}
+.virtual-2-text{
+    color: #7D7987;
+    margin-bottom:30px;
+    font: 20px/30px "Mulish-Light"
+}
+.consult-button{
+    font: 700 1rem 'Mulish', sans-serif;
+    background-color: var(rgb(69, 143, 246));
+    border-radius: 55px;
+    width: 180px;
+    height: 56px;
+    margin-top: 45px;
+    border: none;
+    color: white;
+    font-size: 16.7px;
+}
+/*Services */
+.service{
+    min-height: 1000px;
+}
+.caption{
+    text-align:center;
+    margin-bottom:20px;
+    font: 36px/54px "Mulish-Bold";
+}
+.caption::after{
+    content:"";
+    background-color:black;
+    width: 56px;
+    height: 2px;
+    border-radius:5px;
+    display:block;
+    margin:auto;
+    margin-top:20px;
+}
+.service-text{
+    text-align: center;
+    color: #7D7987;
+    margin-bottom:100px;
+    font: 18px/27px "Mulish-Light";
+}
+.service-main{
+    background-image: url(../img/service-bg-image.png);
+    background-repeat:no-repeat;
+    background-position:bottom left;
+}
+.service-main-captions{
+    color:black;
+    font: 24px/36px "Mulish-Bold";
+}
+
+.service-main-services{
+    color: #7D7987;
+    font: 16px/28px "Mulish-Light";
+}
+.shadow{
+    background-color: white;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    border-radius: 20px;
+    margin-right:20px;
+    margin-bottom:20px;
+    padding:47px  32px;
+    height:350px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s;
+}
+.shadow:hover{
+    transform: translateY(-10px);
+}
+
+.medicine-portfel-img{
+    margin-bottom:20px;
+}
+.learn-more{
+    margin:auto;
+    color: #458FF6;
+    border: 1.4px solid #458FF6;
+    box-sizing: border-box;
+    border-radius: 55px;
+    background-color: #fff;
+    width: 200px;
+    height: 56px;
+    margin-bottom:100px;
+    font: 18px "Mulish-Bold"
+}
+/* download*/
+.first-download{
+    margin-bottom:80px;
+}
+.download{
+    min-height:1000px;
+
+}
+.download-caption{
+    font: 36px/56px "Mulish-Bold";
+}
+.download-caption-2{
+    padding-top:25px;
+}
+.download-block{
+    margin-bottom:80px;
+}
+.download-caption::after{
+    content:"";
+    width: 56px;
+    height: 2px;
+    background-color:black;
+    border-radius:10px;
+    margin-top:20px;
+    margin-bottom:20px;
+    display: block;
+}
+
+.line-text{
+    color: #7D7987;
+    font: 18px/30px "Mulish-Light";
+}
+.arrow-down{
+    margin-left:15px;
+}
+/*Customers */
+.customers{
+    min-height:426px;
+    background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+    border-radius: 24px;
+    margin-bottom:150px;
+}
+.customers2{
+    min-height:426px;
+    background-color:#ff9f9f;
+    border-radius: 24px;
+    margin-bottom:150px;
+}
+.customers3{
+    min-height:426px;
+    background-color:#9b85ff;
+    border-radius: 24px;
+    margin-bottom:150px;
+}
+.main-customers{
+    position:relative;
+}
+.customers-circle{
+   position:absolute;
+   right:0;
+}
+.customer-img{
+    border: 4px solid white;
+    border-radius: 50%;
+}
+.customers-caption{
+    color:white;
+    text-align:center;
+    padding-top:30px;
+    font: 36px/48px "Mulish-Bold";
+}
+.customers-caption::after{
+        content:"";
+        background-color:rgb(255, 255, 255);
+        width: 56px;
+        height: 2px;
+        border-radius:5px;
+        display:block;
+        margin:auto;
+        margin-top:20px;
+}
+.customers-2{
+  background-color:red;
+}
+.line2{
+    background-color: white;
+    margin:auto;
+    margin-bottom:70px;
+}
+.edward{
+    display: flex;
+    align-items: center;
+    margin-left:80px;  
+}
+.edward-newgate{
+    color:white;
+    margin-left:15px;
+    font: 22px/48px "Mulish-Bold"
+}
+.edward-newgate2{
+    font:18px/48px "Mulish-Light";
+    color: rgba(255, 255, 255, 0.85)
+}
+.about-edward{
+    color: rgba(255, 255, 255, 0.9);
+    font: 19px/30px "Mulish-Light";
+}
+.carousel-indicators li{
+    background-color:#0000ff;
+    width: 15px;
+    height: 15px;
+    border-radius:50%;
+}
+.carousel-indicators{
+    position: absolute;
+    top:450px;
+    margin-bottom:140px;
+}
+.carousel-left-img{
+    position: absolute;
+    top:440px;
+    left:400px;
+}
+.carousel-right-img{
+    position: absolute;
+    top:440px;
+    right:400px;
+}
+.carousel-href{
+    position: absolute;
+    top:20px;
+    height: 0px;
+    width: 60px;
+}
+
+/*Doctors*/
+.doctors{
+    min-height:600px;
+}
+
+.doctor-shadows{
+    box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.07);
+    position: relative;
+    transition: all 0.4s;
+}
+.doctor-shadows:hover{
+    transform: translateY(-10px);
+}
+.doctors-block{
+    position: relative;
+    overflow:visible
+}
+.doctors-bg-img{
+    position: absolute;
+    margin-left:700px;
+    margin-top:-150px;
+}
+.doctors-caption{
+    text-align:center;
+    font: 36px/56px "Mulish-Bold";
+}
+.doctors-caption::after{
+    content:"";
+    background-color:rgb(0, 0, 0);
+    width: 56px;
+    height: 2px;
+    border-radius:5px;
+    display:block;
+    margin:auto;
+    margin-top:20px;
+}
+.line3{
+    margin:auto;
+    margin-bottom:80px;
+}
+
+.doctors-title{
+    font: 21px/32px "Mulish-Bold";
+    text-align:center;
+}
+.doctors-text{
+    color: #7D7987;
+    font: 16px/28px "Mulish-Light";
+    text-align:center;
+    height:100px;
+    overflow: hidden;
+}
+.shadows-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.07); */
+}
+
+.read-more{
+    color: #4089ED;
+    font: 17px/28px "Mulish-Medium";
+}
+.read-more:hover{
+    text-decoration:none;
+}
+.read-more:hover .arrow-img{
+    position: relative;
+    animation-name:arrow;
+    animation-duration:0.5s;
+}
+
+@keyframes arrow{
+    0%   {left:0px; top:0px;}
+    50%  {left:40px; top:0px;}
+    100%  {left:0px; right:40px;}
+}
+.view-all{
+   margin-top:60px;
+   margin-bottom:100px;
+}
+.doctor-shadows{
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    border-radius: 20px;
+    background-color: white;
+    box-sizing: border-box;
+    height: 512px;
+    overflow: hidden;
+}
+.shadows-info{
+    padding:0px 33px 35px 32px;
+}
+.doctor-shadows-img{
+    text-align:center;
+}
+
+/* footer  */
+footer{
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);;
+    height:100%;
+}
+.footer-logo{
+    margin-bottom:10px;
+}
+
+.trafalgar-text{
+    color:white;
+    /* text-align:center; */
+    font: 18px/23px "Mulish-Light"
+}
+.trafalgar-copyright{
+    color:white;
+    /* text-align:center; */
+    font: 16px/48px "Mulish-Light";
+}
+.trafalgar-caption{
+    color:white;
+    font: 20px/38px "Mulish-Bold";
+}
+.trafalgar-contacts{
+    list-style-type: none;
+    
+}
+
+.footer-link{
+    color:white;
+    font: 18px/38px "Mulish-Light";
+}
+.footer-link:hover{
+    text-decoration:none;
+}
+.trafalgar-content{
+    padding-top:50px;
+    padding-bottom:50px;
+}
+#scroll-up-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #4089ED;
+    color: #fff;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    border: none;
+    overflow: hidden;
+  }
+  
+  #scroll-up-btn:hover {
+    cursor: pointer;
+    background-color: #1f79f7;
+  }
+  
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1200px){
+    .doctor-shadows{
+            height:500px;
+            
+    }
+    .doctors-bg-img{
+    display: none;
+    }
+    .carousel-right-img,.carousel-left-img,.carousel-indicators{
+        display:none ;
+    }
+}
+
+
+@media only screen and (max-width:1000px)
+{      
+    .navbar-menu{
+        flex-wrap: wrap;
+    }
+    .shadow{
+        padding:22px 12px;
+        justify-content:center;
+    }
+    .service-main-bg-image{
+        display:none;
+    }
+    .doctors-bg-image{
+       display: none;
+    }
+    .doctors-bg-img{
+        display:none;
+    }
+    .doctor-shadows{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+
+    }
+    
+    .shadows-info{
+           padding:15px 16px 6px 15px;
+    }
+}
+
+@media only screen and (max-width:800px){
+    
+    .download{
+        margin-bottom:50px;
+    }
+    .customers-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .edward{
+        margin:auto;
+    }
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        margin:auto;
+    }
+    .menu-style{
+        display:flex;
+        flex-direction: column;
+    }
+    .virtual-text{
+        font-size:28px;
+    }
+    .download-caption{
+        font-size:28px;
+    }
+    .doctors-block{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+   
+}
+@media only screen and (max-width:768px)
+{
+    .doctor-shadows{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 350px;
+        margin:auto;
+        margin-bottom:15px;
+        }
+     .copyright{
+         order: 1;
+     }
+     .consultation{
+         margin-bottom:100px;
+        
+     }
+     .service-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .doctors-block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* overflow:hidden; */
+    }
+    .shadow{
+        height: 230px;
+        padding:8px  12px;
+    }
+    .footer-link{
+        display: flex;
+        flex-direction: row;
+    }
+
+    
+}
+@media only screen and (max-width:550px)
+{
+    .service-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .doctors-block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* overflow: hidden; */
+    }
+    .caption,.virtual-text,.download-caption,.customers-caption,.doctors-caption{
+        font-size:22px;
+    }
+    
+}
+@media only screen and (max-width:350px)
+{
+    .doctor-shadows{
+        width: 320px;
+        margin-bottom:20px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width:370px){
+    .doctor-shadows-img{
+        width: 200px;
+    }
+}
