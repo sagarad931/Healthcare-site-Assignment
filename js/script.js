@@ -1,4 +1,3 @@
-
 // Scroll to top 
 var scrollUpBtn = document.getElementById("scroll-up-btn");
 
@@ -11,7 +10,7 @@ window.addEventListener("scroll", function() {
 });
 
 scrollUpBtn.addEventListener("click", function() {
-  scrollToTop(500); // scroll to top in 500 milliseconds (half a second)
+  scrollToTop(500); // scroll to top in 500 milliseconds
 });
 
 function scrollToTop(scrollDuration) {
@@ -25,7 +24,6 @@ function scrollToTop(scrollDuration) {
       }
     });
   }
-  
   animateScroll();
 }
 
@@ -34,29 +32,19 @@ function scrollToTop(scrollDuration) {
 
 // Smooth scrolling 
 $(document).ready(function() {
-  // Add smooth scrolling to all links
+  
   $("a").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
-      // Prevent default anchor click behavior
       event.preventDefault();
-
-      // Store hash
       var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
+       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 400, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
+      }, 400, function(){   
         window.location.hash = hash;
       });
-    } // End if
+    } 
   });
 });
-
 
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.header');
@@ -67,3 +55,17 @@ window.addEventListener('scroll', function() {
         navbar.classList.remove('scroll-shadow');
     }
 });
+
+
+
+// SCROLL REVEAL ANIMATION
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2000,
+});
+
+sr.reveal('.home_text',{}); 
+sr.reveal('.home_img',{delay: 600}); 
+sr.reveal('.app_img, .doctor-shadows',{ interval: 100}); 
+sr.reveal('.shadow, .contact_input',{interval: 400}); 
